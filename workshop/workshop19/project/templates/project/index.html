@@ -1,0 +1,15 @@
+    {% extends 'project/base.html' %}
+    {% block bodyblock %}
+    <h1>여기는 첫화면입니다 인덱스입니다.</h1>
+        {% for project in projects %}
+            <h3>{{project.name}}</h3>
+            <h3>{{project.age}}</h3>
+            <a href="/projects/{{project.id}}/">더보기</a>
+            <hr>
+        {% endfor %}
+    {% endblock %}
+
+
+
+
+

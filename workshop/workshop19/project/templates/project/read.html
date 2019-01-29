@@ -1,0 +1,11 @@
+{% extends 'project/base.html' %}
+{% block bodyblock %}
+
+        <h3>{{project.name}}</h3>
+        <h3>{{project.email}}</h3>
+        <h3>{{project.birthday|date:"Y-m-d"}}</h3>
+        <h3>{{project.age}}</h3>
+        <a href="/projects/{{project.id}}/delete">삭제</a>
+        <a href="/projects/{{project.id}}/edit">수정</a>
+
+{% endblock %}
