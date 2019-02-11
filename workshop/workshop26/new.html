@@ -1,0 +1,10 @@
+{% extends 'student/base.html' %}
+{% load bootstrap4 %}
+{% block bb %}
+    <form action="/students/create/" method="post">
+        {% csrf_token %}
+        {% bootstrap_form form %}
+        <input type="submit" value="Form Submit"/>  
+    </form>
+{% endblock %}
+
